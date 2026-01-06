@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links</h1>
+
+    <p>Os hyperlinks são um dos conceitos mais antigos da história da linguagem 
+HTML. Eles permitem que você ligue um ponto a outro na World Wide 
+Web. Toda vez que você está acessando um site e clica em um local para 
+ir para outra página, outro site ou até para baixar um arquivo, você está 
+interagindo com um <em>hyperlink</em>.</p>
+<p>Para criar um hyperlink, devemos criar <strong>âncoras</strong> através da tag &lt;a&gt;. O principal 
+atributo dessa tag é o <strong>href</strong>, que cria uma referência hipertexto. Vamos ver um 
+exemplo simples: <br><br>&lt;a href:"https://youtube.com/ball_on_the_basket">Acesse o meu canal do Youtube&lt;/a&gt;</p>
+<a href="https://youtube.com/ball_on_the_basket">Acesse o meu canal do Youtube</a>
+<p>Note que dentro do atributo href, o que colocamos foi uma URL completa para outro 
+site.<br>  </p>
+<p>Outro atributo bem útil da tag de âncora é o <strong>hreflang</strong>, que permite indicar qual <em>
+    é o
+    idioma principal do site para onde o link está desviando o fluxo de navegação
+</em>. Isso vai 
+permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante 
+opte por traduzir automaticamente os conteúdos. </p>
+<p>&lt;a href="https://youtube.com" hreflang="en"&gt;Youtube em Inglês&lt;/a&gt;</p>
+<a href="https://youtube.com" hreflang="en">Youtube em Inglês</a>
+<h1>Mira no Alvo</h1>
+<p>Por padrão, sempre que um visitante clique em um 
+hyperlink, o site de destino abre na mesma janela do site 
+que continha esse link. Ou seja, o conteúdo anterior vai 
+deixar de ser exibido para mostrar o novo conteúdo.</p>
+<p>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo <strong>target</strong>, 
+que suporta os seguintes valores:</p>
+<dl> 
+    <dt>_blank</dt> 
+    <dd>vai abrir o link em uma nova janela em branco</dd> 
+ <dt>_self</dt> 
+ <dd>vai abrir o link na janela ou frame atual (padrão) </dd>
+<dt>_top</dt> 
+<dd>vai desfazer todos os frames e abrir o destino no navegador completo</dd> 
+<dt>_parent</dt> 
+<dd>similar ao uso do _top em uma referência à janela mãe</dd> 
+<dt>nome-do-frame</dt> 
+<dd>caso esteja usando frames, indicar o nome da janela a abrir</dd>
+</dl>
+<p>Como o uso de frames é uma técnica quase em desuso, vamos nos basear apenas nas 
+duas primeiras opções <em><strong>_blank</strong></em> e <strong><em>_self.</em></strong>
+</p>
+
+<a href="https://youtube.com/ball_on_the_basket" target="_blank">Youtube em novo separador</a>
+<h1>Esse link é seu ou dos outros?</h1>
+<p>Existe um recurso bem interessante para links que é indicar qual é a 
+natureza do destino usando o atributo <em>rel</em>. Esse atributo aceita vários 
+valores, entre eles vou citar: </p>
+<dl><dt>next</dt> <dd>indica que o link é para a próxima parte do documento atual</dd> 
+<dt>prev</dt> <dd>indica que o link é para a parte anterior do documento atual</dd> 
+<dt>author</dt> <dd>indica que é um link para o site do autor do artigo atual</dd> 
+<dt>external</dt> <dd>indica que é um link para outro site que não faz parte do site</dd> 
+<dt>nofollow</dt> <dd>indica que é um link para um site não endossado, como um link pago</dd></dl>
+<a href="https://youtube.com" target="_blank" rel="external">Link Externo</a>
+<br><a href="home.html" target="_self" rel="next">Acesse a um link interno</a>
+<h1>E para fazer Downloads? </h1>
+<p>Outra coisa que aparece bastante em sites são os links para 
+efetuar download de algum material em PDF, ou de um arquivo 
+ZIP qualquer. A partir da versão HTML5, as âncoras receberam 
+atributos especiais para isso. Basta fazer o link diretamente 
+para o arquivo que se deseja efetuar o download e adicionar o 
+atributo <em>download</em> com o valor configurado para o nome do 
+arquivo a ser baixado e o atributo <em>type</em> para indicar ao 
+navegador que tipo de arquivo está sendo baixado. Vamos ver 
+um exemplo:</p>
+<a href="os-instintos-primitivos.pdf" download="os-instintos-primitivos.pdf" type="application/pdf">Baixe aqui o livro os-instintos-primitivos</a>
+<br>
+<a href="baixar/cyber.pdf" download="cyber.pdf" type="application/pdf">Baixe de outra pasta</a>
+<p>Aqui vão alguns media types bem usados no nosso dia-a-dia:</p>
+
+<ul type="square"> 
+<li>application/pdf</li>
+<li>application/zip</li> 
+<li>text/html</li> 
+ <li>text/css</li> 
+ <li>text/javascript</li>
+ <li>video/mp4</li> 
+ <li>video/H264</li> 
+ <li>video/JPEG</li> 
+ <li>audio/aac</li> 
+ <li>audio/mpeg</li> 
+ <li>font/ttf</li> 
+ <li>image/jpeg</li> 
+ <li>image/png</li></ul>
+ <p><strong>LISTA DE MEDIA TYPES</strong>: Se você quer saber o que escrever 
+dentro do atributo type de uma âncora de hypertext, consulte a lista 
+oficial da IANA.org disponível no link abaixo. 
+<a href="https://www.iana.org/assignments/media-types/media-types.xhtml">https://www.iana.org/assignments/media-types/media-types.xhtml</a> </p>
+
+</body>
+</html>

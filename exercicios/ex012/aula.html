@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Estilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adicionando estilo ao nosso site</h1>
+    <p>Nós já falamos sobre folhas de estilo em cascata, as 
+famosas CSS no capítulo 3. Se por acaso você não se 
+lembra direito, vale a pena voltar lá e dar uma segunda 
+olhada nas definições. Vou considerar que você lembra 
+claramente o que são as <strong>Cascading Style Sheets</strong> para 
+podermos prosseguir.</p>
+<p>Vamos começar nos focando na tag <body> e aplicando um estilo diferente ao corpo 
+da página. Adicione o parâmetro style e digite as duas declarações de font-family e 
+color, conforme apresentado a seguir:</p>
+<img src="imagens/css.png" alt="Código Css no body">
+<p>Note que o formato da letra mudou (era Times e ficou em Arial) e a cor da fonte 
+também foi alterado para <span style="color:blue">azul</span>. Se por acaso alguma dessas duas alterações não 
+funcionou corretamente com você, confira seu código, pois algo foi digitado 
+incorretamente. Lembre-se que o computador não é tão inteligente quanto você pode 
+pensar. Temos que dar ordens bem claras e seguindo sempre as regras para que ele 
+nos obedeça.</p>
+<p>
+    <strong><span style="color: red;">CUIDADO!</span></strong> Se por acaso você aprendeu em algum momento a tag 
+&lt;font color=“blue”&gt; e acha muito mais prática usá-la, saiba 
+que ela <strong>NÃO É MAIS ACEITA</strong> para as especificações da HTML5!
+</p>
+<p>Vamos fazer mais uma alteração, dessa vez na linha do primeiro título &lt;h1&gt; do nosso 
+código:</p>
+<img src="imagens/titulo.png" alt="CSS do título">
+<p>Note que apenas o <span style="color:red;">Capítulo 1</span> ficou vermelho, o <span style="color:blue;">Capítulo 2</span> - que também é um 
+&lt;h1&gt; - não teve alteração alguma. Isso acontece pois estamos fazendo 
+<strong>configurações pontuais</strong> usando CSS. Para ver o resultado do código gerado, <a href="index.html" target="_next">clique aqui</a></p>
+<h1>Estilizando de maneira mais 
+interessante: CSS internal style</h1>
+<p>Para aplicar estilos de forma mais dinâmica e prática, podemos adicionar uma tag 
+&lt;style&gt; dentro da área &lt;head&gt; do nosso documento HTML local. Volte lá no seu 
+VSCode, e adicione o código dentro de &lt;head&gt;. Para acessar o código, <a href="second.html" target="_next">clique aqui</a></p>
+<p>ATENÇÃO! A tag &lt;style&gt; deve estar dentro da área &lt;head&gt; do seu 
+documento HTML5. Se você colocá-la em qualquer outro local, como 
+dentro da tag &lt;body&gt;, o resultado até pode funcionar, mas seu código 
+estará fora dos padrões estabelecidos pela W3C. Siga sempre as regras!</p>
+<h1>A técnica mais versátil: CSS 
+external style</h1>
+<p>Manter as folhas de estilo fora do código HTML, além de uma maior organização faz 
+com que tudo seja reaproveitado de maneira mais eficiente nas outras páginas do 
+nosso site. Para isso, utilizamos a tag &lt;link&gt; especialmente configurada para 
+trabalhar com arquivos externos de estilo. Essa tag deve ser colocada dentro da área 
+&lt;head&gt; do seu documento HTML. 
+</p>
+<img src="imagens/image.png" alt="CSS externo">
+<p>A linha com o &lt;link&gt; pode estar em qualquer linha, contanto que seja dentro da área 
+&lt;head&gt;. Particularmente, sempre procuro adicionar essa configuração após a tag 
+&lt;title&gt; do documento atual. <a href="third.html" target="_next">Clique aqui</a></p>
+<p>De forma resumida, guarde isso na sua cabeça:</p>
+<dl><dt>CSS externo</dt>  <dd>use sempre que puder</dd> 
+<dt>CSS interno</dt> <dd>use para pequenas configurações</dd> 
+<dt>CSS inline</dt>  <dd>procure evitar</dd></dl>
+<p>Ainda é possível misturar as três técnicas, criando um CSS externo para as 
+configurações globais, CSS interno para as configurações locais de um documento e 
+CSS inline para pequenas configurações pontuais.</p>
+<h1>Cores e significados</h1>
+<img src="imagens/cores.jpeg" alt="cores">
+<p class="fim">Para especificar tamanho de fontes, existem várias medidas como cm (centímetros), 
+in (polegadas), pt (pontos), pc (paicas), px (pixels), etc. Para tamanhos de fonte a 
+serem exibidos na tela, o W3C recomenda o uso do px ou do em. </p>
+<p class="obs">EU GOSTO DE USAR PT, MAS: A medida pt é aquela usada em 
+editores de texto como o Microsoft Word. A recomendação oficial é 
+de usar pt apenas para referenciar conteúdos que serão impressos.</p>
+<p class="outra">A medida <strong>em</strong> é uma das que gera mais dúvida nos alunos. Ela é uma medida 
+referencial em relação ao tamanho original da fonte. O tamanho padrão de uma fonte 
+é geralmente <strong>16px</strong>, isso equivale a <strong>1em</strong>. A partir daí, podemos configurar o tamanho 
+de um título, por exemplo, como sendo 2 vezes maior que a fonte padrão usando o 
+valor <strong>2em</strong> para a propriedade.</p>
+</body>
+</html>

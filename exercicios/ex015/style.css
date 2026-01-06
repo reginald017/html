@@ -1,0 +1,53 @@
+h1{
+    color: red;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(17, 143, 160);
+}
+a:visited{
+    color:darkred;
+}
+a:hover{
+    text-decoration:underline;
+}
+#marcado{
+    background-color: yellow;
+}
+.marcado{
+    background: yellow;
+}
+.especial{
+    color: chocolate;
+    text-decoration: underline;
+}
+.especial:hover{
+    text-decoration: none;
+    color: red;
+    background-color: black;
+}
+.especial::before{
+    content:"<";
+    font-weight: lighter;
+}
+.especial::after{
+    content:">";
+    font-weight: lighter;
+}
+div{
+    background: lightgray;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;  
+    display: inline-block;
+}
+div#d1:hover{
+    background-color: blue;
+}
+div:hover{
+    background-color:yellow;
+}

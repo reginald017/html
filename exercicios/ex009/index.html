@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com HTML</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <p><strong>Listas</strong> são o conjunto de actividades a serem executadas, detalhadas com um padrão, em <abbr title="Hiper Text Markup Language">HTML</abbr>, temos <mark>2 tipos de listas esxistentes</mark>.E elas são: <strong><abbr title="Ordered List">OL</abbr></strong>-Lista Ordenada, e <strong><abbr title="Unordered List">UL</abbr></strong>-Lista não Ordenada. </p>
+    <h2>Elementos em uma lista</h2>
+    <p>Os elementos em uma lista são colocados com a tag li(List Item).Ex: &lt;li&gt;elemento&lt;/li&gt;.</p>
+    <h1>Listas Ordenadas(&lt;OL&gt;)</h1>
+    <p>As <strong>listas ordenadas</strong> são aquelas listas em que os seus itens possuem uma ordem ou numeração. Uma lista é representada com a tag ol(ordered list).Ex:&lt;ol&gt;&lt;/ol&gt; </p>
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ol>
+    <p>A tag &lt;ol&gt; possui um parâmetro type, onde configuramos o tipo de marcador da lista 
+atual. As opções de valores para esse parâmetro são:</p>
+<ul type="circle">
+    <li>1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, … </li>
+    <li>A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …</li> 
+ <li>a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …</li> 
+ <li>I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …</li> 
+<li>i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, … </li>
+</ul>
+<P>Podemos também escolher onde a nossa lista vai começar com o parâmetro <em>start</em>. Ex: &lt;ol type= "I" start=5&gt; <br>A lista vai ser exibida assim:  V, VI, VII, VIII, IX, … </P>
+<h1>Listas Não Ordenadas (&lt;ul&gt;)</h1>
+<p><strong>Listas não Ordenadas</strong> são aquelas listas que não seguem uma determinada ordem, e elas são representadas com a tag &lt;<abbr title="Unordered List">ul</abbr>&gt;</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<p>
+    O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a
+    opção de configurar a propriedade type da tag &lt;ul&gt; com os seguintes valores:
+</p>
+
+<ul>
+    <li>disc - padrão. Uma bola preta totalmente pintada</li>
+    <li type="circle">circle - Uma bola com uma borda preta e sem preenchimento</li>
+    <li type="square">square - Um pequeno quadrado preto totalmente pintado</li>
+</ul>
+
+<h1>Listas Mistas</h1>
+<p>
+    Podemos também criar listas mistas, configurando listas dentro de outras listas. Veja
+    o exemplo a seguir:
+    
+</p>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <ol type="a" start="7">
+        <li>Item 2.1</li>
+        <li>Item 2.2</li>
+        <li>Item 2.3</li>
+        <li>Item 2.4</li>
+        <li>Item 2.5</li>
+    </ol>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ol>   
+<p>Note que os itens da lista interna (a, b, c, …) está deslocado para a direita em relação 
+ao item 2, do qual essa sub-lista é filha. </p>
+<p><strong>OBS</strong>: Além de aninhar listas ordenadas, podemos juntar listas &lt;ul&gt; 
+com &lt;ol&gt; e vice-versa. As listas internas sempre terão deslocamento 
+interno para a direita.</p>
+<h1>Lista de Definições</h1>
+<p>São aquelas listas em que os seus elementos serão descritos, ela é representada pela tag &lt;<abbr title="Definition List">dl</abbr>&gt; e cada termo que se pretende descrever é representado pela tag &lt;<abbr title="Definition Term">dt</abbr>&gt; e cada descrição é representada pela tag &lt;<abbr title="Definition Description">dd</abbr>&gt;.</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language, Linguagem de Marcação, e serve para desenvolver o conteúdo do site.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet, folhas de estilo em cascatas, servem para dar estilo ao nosso site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação que serve para dar vida e interativadade ao site.</dd>
+</dl>
+</body>
+</html>

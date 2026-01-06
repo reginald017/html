@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Para colocar um <b>texto em negrito</b>, utilizamos a tag &lt;b&gt;<b>texto</b>&lt;/b&gt; - bold; (Não Semântica).</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong>, usando a tag &lt;strong&gt;<strong>texto</strong>&lt;strong&gt; - forte;(Semântica).</p>
+
+    <h2>Itálico/Enfâse</h2>
+    <p>Nesta frase, tenho um <i>termo itálico</i> usando a tag &lt;i&gt;<i>texto</i>&lt;i&gt;(não semântica).</p>
+    
+        <p>Nesta frase, temos um <em>termo em enfâse</em> usando a tag EM, &lt;em&gt;<em>texto</em>&lt;/em&gt; (Semântica).</p>
+        <h1>Marcado</h1>
+        <p>Nesta frase, tenho um <mark>termo marcado</mark>, usando a tag &lt;mark&gt;<mark>texto</mark>&lt;/mark&gt;</p>
+        <h1>Texto grande e pequeno</h1>
+        <p>O &lt;big&gt;<big>big</big>&lt;/big&gt; morreu, mas o <small>SMALL</small> AINDA SOBREVIVE, para diminuir o texto, usamos a tag &lt;small&gt;<small>texto</small>&lt;/small&gt;.</p>
+        <h1>Texto Deletado</h1>
+        <p>Nesta frase, temos um termo <del>deletado</del>, para deletar um texto usamos a tag &lt;del&gt;<del>texto</del>&lt;/del&gt;.</p>
+        <h1>Texto inserido</h1>
+        <p>Nesta frase, temos um termo <ins>inserido</ins>, que é o oposto do texto deletado, e esta tag anteriormente era usada como <u>underline(u)</u>, para inserir um texto, usamos a tag &lt;ins&gt;<ins>texto</ins>&lt;ins&gt;</p>
+        <h1>Textos sobrescritos e textos subscritos</h1>
+        <p>Para sobrescrever um texto, como este X<sup>2</sup> usamos a tag &lt;sup&gt;<sup>2</sup>&lt;/sup&gt;, e para subscrever(sub-índice), como este X<sub>2</sub>, usamos a tag &lt;sub&gt;<sub>2</sub>&lt;/sub&gt; </p>
+        <h1>Trechos de código</h1>
+        <p>
+            Nós somos (ou seremos) programadores, e por isso compartilhamos muito código
+            fonte em diversas linguagens. Para isso, existe a tag &lt;code&gt; da HTML onde você pode
+            delimitar seu código. A principal vantagem no uso dessa tag é a o valor semântico que
+            ela representa, indicando ao navegador que se trata de um código de computador.
+            Porém, existe também um efeito visual, pois as letras ficam no modo mono-espaçadas
+            (monospace), o que facilita bastante a leitura do código. Analise, por exemplo, o
+            trecho de código a seguir:
+        </p>
+        <h1>Código Python</h1>
+        <code>
+            num = int(input("Digite um número"));
+            if(num%2==0)
+                printf("Número Par");
+            else:
+                printf("Número ímpar");
+            printf("Fim do Programa");
+
+        </code>
+        <p>
+            Você pode achar que o código vai 
+            aparecer lindamente no seu site, 
+            porém o que acontece é simplesmente 
+            uma mudança das letras, para que 
+            elas fiquem mono-espaçadas (veja a 
+            imagem).
+        </p>
+        <p>
+            
+            Para resolver esse problema, vamos usar uma outra tag HTML chamada &lt;pre&gt;, que: 
+            mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi 
+            digitado, incluindo quebras de linhas, espaços e tabulações.
+        </p>
+        <pre><code>
+            num = int(input("Digite um número"));
+            if(num%2==0)
+                printf("Número Par")
+            else:
+                printf("Número ímpar");
+            printf("Fim do Programa");
+
+        </code></pre>
+        <h1>"Citações"</h1>
+        <p>Para adicionar uma citação em HTML, usamos a tag &lt;q&gt;, que vem da palavra em inglês quote, que significa citação, essa tag é usada dentro de parágrafos.Ex: <q>Só sei que nada sei</q>-Aristóles</p>
+        <p>podemos adicionar a palavra cite dentro da tag para explicar a fonte da citação, para efectuarmos uma citação fora de um parágrafo, usamos a tag &lt;blockquote cite="https://www.reginaldo.com"&gt;citação&lt;/blockquote&gt;. Ex:</p>
+    
+<blockquote cite="https://www.biblia.com">¹ O Senhor é o meu pastor, nada me faltará.
+² Deitar-me faz em verdes pastos, guia-me mansamente a águas tranquilas.
+³ Refrigera a minha alma; guia-me pelas veredas da justiça, por amor do seu nome.
+⁴ Ainda que eu andasse pelo vale da sombra da morte, não temeria mal algum, porque tu estás comigo; a tua vara e o teu cajado me consolam.
+⁵ Preparas uma mesa perante mim na presença dos meus inimigos, unges a minha cabeça com óleo, o meu cálice transborda.
+⁶ Certamente que a bondade e a misericórdia me seguirão todos os dias da minha vida; e habitarei na casa do Senhor por longos dias. 
+</blockquote>
+<blockquote cite="https://www.biblia.com">Olá, tudo bem?</blockquote>
+<h1>Abreviações</h1>
+<p>Para criar uma abreviação, usamos a tag <abbr title="Abbreviation">abbr</abbr>.Exemplo: Estou estudando <abbr title="Hiper Text Markup Language">HTML</abbr> para criar sites.</p> 
+<h1>Palavra ao contrário</h1>
+<p>Para inverter um texto, <bdo dir="rtl">texto invertido</bdo> como esse, usamos a tag <abbr title="bi-direcional override">bdo</abbr> com o parâmetro dir(que pode ser <abbr title="left to right">ltr</abbr>(esquerda para direita) ou  <abbr title="right to left">rtl</abbr>(direita para a esquerda)</p>
+    
+</body>
+</html>

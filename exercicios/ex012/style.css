@@ -1,0 +1,36 @@
+body{
+    background-color: lightgoldenrodyellow;
+    color: chocolate;
+    font-size: 12pt;
+    font-family: Arial;
+}
+h1{
+    color: brown;
+}
+a{
+    color: brown;
+    text-decoration: none;
+    
+}
+dt{
+    color: green;
+    font-family: cursive;
+    font-weight: bolder;
+    font-style: italic;
+}
+dd{
+    color:red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.fim{
+    background: #ffffff;
+    /* text-align: justify;-padrão para parágrafo */
+}
+.obs{
+    color: red
+}
+.outra{
+    color: black;
+    background-color: rgb(204, 55, 55);
+}

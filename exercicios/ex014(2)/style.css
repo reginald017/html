@@ -1,0 +1,32 @@
+/* *{ Altura global
+    height: 100%;
+} */
+body{
+    /* background-color: rgb(140, 211, 140);  45deg- 45 graus*/
+    background-image: linear-gradient(to right, rgb(140, 211, 140),white);
+}
+
+/* Class(identificador de 1 ou mais elementos) é .
+    Id(identificador único de elemento) é #
+*/
+#titulo-principal{
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.topico{
+    text-align: right;
+    color:rgb(0, 129, 0);
+}
+h1{
+    color:rgb(29, 63, 29);
+}
+.ativador{
+    color: red;
+    font-weight: bolder;
+    font-style:italic;
+}
+.destaque{
+    background-color: rgb(110, 146, 25);
+}
